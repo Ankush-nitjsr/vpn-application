@@ -62,7 +62,7 @@ public class ConnectionServiceImpl implements ConnectionService {
                 user.setConnected(true);
                 user.getConnectionList().add(connection);
 
-                serviceProvider1.getConnections().add(connection);
+                serviceProvider1.getConnectionList().add(connection);
 
                 userRepository2.save(user);
                 serviceProviderRepository2.save(serviceProvider1);

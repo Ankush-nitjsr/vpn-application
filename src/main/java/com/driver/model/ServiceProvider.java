@@ -18,7 +18,7 @@ public class ServiceProvider {
     private Admin admin;
 
     @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
-    private List<Connection> connections = new ArrayList<>();
+    private List<Connection> connectionList = new ArrayList<>();
 
     @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
     private List<Country> countryList = new ArrayList<>();
@@ -57,12 +57,12 @@ public class ServiceProvider {
         this.admin = admin;
     }
 
-    public List<Connection> getConnections() {
-        return connections;
+    public List<Connection> getConnectionList() {
+        return connectionList;
     }
 
-    public void setConnections(List<Connection> connections) {
-        this.connections = connections;
+    public void setConnectionList(List<Connection> connectionList) {
+        this.connectionList = connectionList;
     }
 
     public List<Country> getCountryList() {
