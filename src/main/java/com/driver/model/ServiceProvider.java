@@ -21,7 +21,7 @@ public class ServiceProvider {
     private List<Connection> connections = new ArrayList<>();
 
     @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
-    private List<Country> countries = new ArrayList<>();
+    private List<Country> countryList = new ArrayList<>();
 
     @ManyToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
     private List<User> users = new ArrayList<>();
@@ -65,12 +65,12 @@ public class ServiceProvider {
         this.connections = connections;
     }
 
-    public List<Country> getCountries() {
-        return countries;
+    public List<Country> getCountryList() {
+        return countryList;
     }
 
-    public void setCountries(List<Country> countries) {
-        this.countries = countries;
+    public void setCountryList(List<Country> countryList) {
+        this.countryList = countryList;
     }
 
     public List<User> getUsers() {

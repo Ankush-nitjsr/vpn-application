@@ -38,7 +38,7 @@ public class ConnectionServiceImpl implements ConnectionService {
             Country country1 = null;
 
             for(ServiceProvider serviceProvider:providers){
-                List<Country> countryList = serviceProvider.getCountries();
+                List<Country> countryList = serviceProvider.getCountryList();
 
                 for (Country country:countryList){
 
